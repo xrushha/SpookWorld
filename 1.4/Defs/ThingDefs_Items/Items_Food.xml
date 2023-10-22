@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SW_Sweets</defName>
+    <label>sweets</label>
+    <description>Sweets made from cocoa beans, sugar and vanilla. They fulfill the need for recreation, but they are not very nutritious.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Sweets</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<stackLimit>150</stackLimit>
+    <statBases>
+      <MarketValue>2</MarketValue>
+      <Mass>0.01</Mass>
+      <Nutrition>0.03</Nutrition>
+	  <DeteriorationRate>2</DeteriorationRate>
+	  <MaxHitPoints>30</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+    </statBases>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <preferability>DesperateOnly</preferability>
+      <joy>0.09</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <babiesCanIngest>true</babiesCanIngest>
+    </ingestible>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+	<possessionCount>10</possessionCount>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>SW_SweetsSuspicious</defName>
+    <label>sweets</label>
+    <description>Sweets made from cocoa beans, sugar and vanilla. These sweets smell like chemfuel and are suspiciously soft. It'd be better not to eat them.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Sweets</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+	<stackLimit>150</stackLimit>
+	<tickerType>Normal</tickerType>
+    <statBases>
+      <MarketValue>4</MarketValue>
+      <Mass>0.01</Mass>
+      <Nutrition>0.03</Nutrition>
+	  <DeteriorationRate>2</DeteriorationRate>
+	  <MaxHitPoints>30</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+    </statBases>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <preferability>DesperateOnly</preferability>
+      <joy>0.09</joy>
+      <joyKind>Gluttonous</joyKind>
+      <ingestSound>Meal_Eat</ingestSound>
+	  <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <babiesCanIngest>true</babiesCanIngest>
+      <tableDesired>false</tableDesired>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SW_ChemfuelPoisoning</hediffDef>
+          <severity>0.15</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0.4</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>100~250</wickTicks>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <allowedArchonexusCount>150</allowedArchonexusCount>
+	<possessionCount>10</possessionCount>
+  </ThingDef>
+
+</Defs>
