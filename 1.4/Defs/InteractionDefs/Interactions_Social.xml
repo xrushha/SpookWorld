@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <InteractionDef>
+    <defName>SW_SpookyStoryGood</defName>
+    <label>spooky story</label>
+    <workerClass>InteractionWorker_DeepTalk</workerClass>
+    <symbol>Things/Mote/SpookyStory</symbol>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>4</initiatorXpGainAmount>
+    <recipientThought>SW_SpookyStoryGood</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [toldastory] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+
+        <li>toldastory->shared a spooky story about</li>
+        <li>toldastory->told a spooky story about</li>
+        <li>toldastory->whispered a spooky story about</li>
+        <li>toldastory->shared a scary story about</li>
+        <li>toldastory->told a scary story about</li>
+        <li>toldastory->whispered a scary story about</li>
+        <li>toldastory->shared a terrifying story about</li>
+        <li>toldastory->told a terrifying story about</li>
+        <li>toldastory->whispered a terrifying story about</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>SW_SpookyStoryBad</defName>
+    <label>spooky story</label>
+    <workerClass>InteractionWorker_DeepTalk</workerClass>
+    <symbol>Things/Mote/SpookyStory</symbol>
+    <initiatorXpGainSkill>Social</initiatorXpGainSkill>
+    <initiatorXpGainAmount>2</initiatorXpGainAmount>
+    <recipientThought>SW_SpookyStoryBad</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [toldastory] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+
+        <li>toldastory->shared a spooky story about</li>
+        <li>toldastory->told a spooky story about</li>
+        <li>toldastory->whispered a spooky story about</li>
+        <li>toldastory->shared a scary story about</li>
+        <li>toldastory->told a scary story about</li>
+        <li>toldastory->whispered a scary story about</li>
+        <li>toldastory->shared a terrifying story about</li>
+        <li>toldastory->told a terrifying story about</li>
+        <li>toldastory->whispered a terrifying story about</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+</Defs>
