@@ -76,6 +76,12 @@
                     <Skull>1</Skull>
                </value>
             </li>
+            <li Class="PatchOperationAdd">
+               <xpath>Defs/ThingDef[defName="SW_SkeletonStatue"]/costList</xpath>
+               <value>
+                    <Skull>1</Skull>
+               </value>
+            </li>
          </operations>
       </match>
    </Operation>
