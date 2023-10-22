@@ -144,6 +144,7 @@
       <texPath>Things/Building/SkeletonStatue/SkeletonStatue</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawRotated>false</drawRotated>
+	  <drawSize>(2, 2)</drawSize>
       <damageData>
         <rect>(0.35,0.35,0.3,0.3)</rect>
       </damageData>
@@ -164,9 +165,9 @@
     <costList>
       <Steel>30</Steel>
     </costList>
-    <building>
-      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-    </building>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
     <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
