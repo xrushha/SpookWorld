@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ModMetaData>
+	<name>SpookWorld</name>
+	<author>xrushha</author>
+	<url>https://steamcommunity.com/id/xrushha/myworkshopfiles/</url>
+    <supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>xrushha.SpookWorld</packageId>
+	<description><![CDATA[<b><color=orange>It's the spooky month so it's time for some spooky stuff!</color></b> This mod adds halloween-themed content including...
+- Halloween masks!
+- Jack-o-lanterns!
+- A brand new event with some sweets and a twist to it!
+- And more!]]></description>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+	</loadAfter>
+ </ModMetaData>
