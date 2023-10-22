@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingSetMakerDef>
+    <defName>SW_SweetsDrop</defName>
+    <root Class="ThingSetMaker_RandomOption">
+      <options>
+        <li>
+          <weight>0.6</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>SW_Sweets</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~150</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+        <li>
+          <weight>0.4</weight>
+          <thingSetMaker Class="ThingSetMaker_StackCount">
+            <fixedParams>
+              <filter>
+                <thingDefs>
+                  <li>SW_SweetsSuspicious</li>
+                </thingDefs>
+              </filter>
+              <countRange>10~150</countRange>
+            </fixedParams>
+          </thingSetMaker>
+        </li>
+      </options>
+    </root>
+  </ThingSetMakerDef>
+  
+</Defs>
